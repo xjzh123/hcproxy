@@ -47,4 +47,4 @@ server.on('upgrade', function (req, socket, head) {
         })
     }
 })
-server.listen(6060)
+server.listen(process.env.PORT ?? 6060)
